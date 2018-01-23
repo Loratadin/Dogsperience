@@ -14,6 +14,9 @@ a {
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
-    color: white;
+}
+.white-background {
+    background: white;
+    border: 1px #d9d9d9;
 }
 /* /Common Styles*/
