@@ -11,17 +11,19 @@ a {
     background-size: cover;
     font-family: myriad-pro;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
+    
 }
 .white-background {
     background: white;
     border: 1px #d9d9d9;
-}
-* {
-    margin: 0;
-    padding: 0;
+    padding: 0 20px 0 20px:
 }
 /* /Common Styles*/
 
@@ -56,3 +58,30 @@ a {
     color: #555555;
 }
 /* /Header */
+.header-white {
+    overflow: hidden;
+    padding: 36px auto 23px auto;
+}
+.logo-box {
+    float: left;
+
+}
+.logo {
+    font-size: 30px;
+    color: #555555;
+}
+.logo-description {
+    font-size: 11px;
+    color: #d9d9d9;
+}
+.nav-menu {
+    float: right; 
+    overflow: hidden;
+    list-style-type: none;
+}
+.nav-menu-item {
+    display: block;
+    float: left;
+    color: #555555;
+    font-size: 15px;
+}
