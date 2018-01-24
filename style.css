@@ -88,3 +88,9 @@
 .nav-menu-item:last-child {
     padding: 0;
 }
+.hr {
+    background: #d9d9d9;
+}
+.slider {
+    margin: 18px auto;
+}
