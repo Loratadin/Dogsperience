@@ -41,7 +41,7 @@
 .image-social {
     width: 30px;
     margin: 0 12px 0 0;
-    opacity: 26%;
+    opacity: 26;
 }
 .image-social:hover {
     opacity: 100%;
