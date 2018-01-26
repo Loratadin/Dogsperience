@@ -140,7 +140,7 @@
   width: 570px;
   line-height: 27px;
 }
-.text-h2 {
+.h2 {
     font-size: 18px;
 }
 .text-paragraph {
@@ -195,3 +195,12 @@
 }
 /* /call to action */
 
+/* recent projects */
+.rec-proj-pics {}
+.project-img {
+    padding: 5px;
+    border: 1px solid #d9d9d9;
+    text-align: center;
+   
+}
+/* /recent projects */
