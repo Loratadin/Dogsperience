@@ -196,11 +196,15 @@
 /* /call to action */
 
 /* recent projects */
+.recent-projects {
+    margin: 20px auto 30px auto;
+}
 .rec-proj-pics {}
 .project-img {
     display: inline-block;
     padding: 5px;
     border: 1px solid #d9d9d9;
+    margin-right: 5px;
    
    
 }
