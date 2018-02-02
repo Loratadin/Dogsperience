@@ -213,6 +213,16 @@
 /* our representatives */
 .our-representatives {
     margin-top: 17px;
-    
+
+}
+.repres-name {
+    font-size: 14px;
+}
+.repres-bio {
+    font-size: 12px;
+}
+.repres-more {
+    font-size: 12px;
+    display: inline;
 }
 /* /our representatives */
