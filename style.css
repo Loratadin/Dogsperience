@@ -98,8 +98,8 @@
 
 /* Slideshow container */
 .slideshow-container {
+position: relative;
   max-width: 920px;
-  position: relative;
   margin: 18px auto;
 }
 
@@ -144,14 +144,14 @@
 
 /* The dots/bullets/indicators */
 .dot {
-    position: absolute;
+    display: inline-block;
+position: absolute;
   cursor: pointer;
   top: 0;
   height: 17px;
   width: 17px;
   margin: 15px 4px auto 15px;
   border: 1px solid white;
-  display: inline-block;
   transition: background-color 0.6s ease;
 }
 
@@ -202,8 +202,8 @@
     margin-top: 14px;
 }
 .project-img {
-    filter: grayscale(100%);
     display: inline-block;
+    filter: grayscale(100%);
     padding: 5px;
     border: 1px solid #d9d9d9;
     margin-right: 5px;
@@ -223,10 +223,10 @@
     margin-bottom: 18px;
 }
 .representative {
+    overflow: hidden;
     margin-top: 9px;
     padding-bottom: 9px;
     border-bottom: 1px solid #d9d9d9;
-    overflow: hidden;
 }
 .repres-img {
     float: left;
@@ -251,6 +251,7 @@
 
 /* about us */
 .about-us {
+    overflow: hidden;
     width: 50%;
     margin-top: 15px;
 }
@@ -258,5 +259,13 @@
     font-size: 14px;
     line-height: 22px;
     color: #727272;
+}
+.button-read-more {
+    float: right;
+    font-size: 16px;
+    color: white;
+    background: #f0801c;
+    padding: 8px 15px;
+    margin-right: 16px;
 }
 /* /about us*/
