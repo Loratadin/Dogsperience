@@ -267,5 +267,9 @@ position: absolute;
     background: #f0801c;
     padding: 8px 15px;
     margin-right: 16px;
+    cursor: pointer;
+}
+.button-read-more:hover {
+    color: #d9d9d9;
 }
 /* /about us*/
