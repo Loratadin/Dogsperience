@@ -62,6 +62,7 @@
 .header-white {
     overflow: hidden;
     padding: 36px 0 23px 0;
+    border-bottom: 1px solid #d9d9d9;
 }
 .logo-box {
     float: left;
@@ -94,12 +95,6 @@
     padding: 0;
 }
 /* /logo and nav menu */
-
-
-.hr {
-    background: #d9d9d9;
-}
-
 
 /* Slideshow container */
 .slideshow-container {
@@ -188,7 +183,7 @@
     border-right: none;
     border-left: none;
     height: 124px;
-    margin-top: 20px;
+    margin-top: -4px;
     text-align: center;
     font-size: 24px;
     padding-top: 36px;
@@ -213,7 +208,15 @@
 /* our representatives */
 .our-representatives {
     margin-top: 17px;
-
+}
+.representative {
+    margin: 9px auto 9px auto;
+    border-bottom: 1px solid #d9d9d9;
+}
+.repres-img {
+    display: inline-block;
+    padding: 3px;
+    border: 1px solid #d9d9d9;
 }
 .repres-name {
     font-size: 14px;
@@ -223,6 +226,6 @@
 }
 .repres-more {
     font-size: 12px;
-    display: inline;
+    cursor: pointer;
 }
 /* /our representatives */
