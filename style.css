@@ -198,10 +198,18 @@
     margin-top: 14px;
 }
 .project-img {
+    filter: grayscale(100%);
     display: inline-block;
     padding: 5px;
     border: 1px solid #d9d9d9;
     margin-right: 5px;
+}
+.project-img:hover {
+    filter: none;
+    background-image: url('./images/magnifier.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
 }
 /* /recent projects */
 
@@ -210,19 +218,23 @@
     margin-top: 17px;
 }
 .representative {
-    margin: 9px auto 9px auto;
+    margin-top: 9px;
+    padding-bottom: 9px;
     border-bottom: 1px solid #d9d9d9;
+    overflow: hidden;
 }
 .repres-img {
-    display: inline-block;
+    float: left;
     padding: 3px;
     border: 1px solid #d9d9d9;
+    margin-right: 10px;
 }
 .repres-name {
     font-size: 14px;
 }
 .repres-bio {
     font-size: 12px;
+    line-height: 20px;
 }
 .repres-more {
     font-size: 12px;
