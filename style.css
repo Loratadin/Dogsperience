@@ -187,12 +187,16 @@
     text-align: center;
     font-size: 24px;
     padding-top: 36px;
+    color: #555555;
 }
 /* /call to action */
 
 /* recent projects */
 .recent-projects {
     margin: 20px auto 22px auto;
+}
+.recent-projects.h2 {
+    color: #727272;
 }
 .rec-proj-pics {
     margin-top: 14px;
@@ -216,6 +220,7 @@
 /* our representatives */
 .our-representatives {
     margin-top: 17px;
+    margin-bottom: 18px;
 }
 .representative {
     margin-top: 9px;
@@ -231,13 +236,27 @@
 }
 .repres-name {
     font-size: 14px;
+    color: #727272;
 }
 .repres-bio {
     font-size: 12px;
     line-height: 20px;
+    color: #727272;
 }
 .repres-more {
     font-size: 12px;
     cursor: pointer;
 }
 /* /our representatives */
+
+/* about us */
+.about-us {
+    width: 50%;
+    margin-top: 15px;
+}
+.about-us-text {
+    font-size: 14px;
+    line-height: 22px;
+    color: #727272;
+}
+/* /about us*/
