@@ -299,4 +299,8 @@ position: absolute;
 .services-item-link:hover {
     color: #f0801c;
 }
+.services-arrow {
+    height: 16px;
+    margin-bottom: -3px;
+}
 /* /services we offer */
