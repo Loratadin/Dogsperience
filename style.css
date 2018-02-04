@@ -22,6 +22,7 @@
     margin: 0 auto;
 }
 .white-background {
+    overflow: hidden;
     background: white;
     border: 1px #d9d9d9;
     padding: 0 20px 0 20px;
@@ -194,8 +195,6 @@ position: absolute;
 /* recent projects */
 .recent-projects {
     margin: 20px auto 22px auto;
-}
-.recent-projects.h2 {
     color: #727272;
 }
 .rec-proj-pics {
@@ -221,6 +220,7 @@ position: absolute;
 .our-representatives {
     margin-top: 17px;
     margin-bottom: 18px;
+    color: #727272;
 }
 .representative {
     overflow: hidden;
@@ -236,12 +236,10 @@ position: absolute;
 }
 .repres-name {
     font-size: 14px;
-    color: #727272;
 }
 .repres-bio {
     font-size: 12px;
     line-height: 20px;
-    color: #727272;
 }
 .repres-more {
     font-size: 12px;
@@ -249,16 +247,21 @@ position: absolute;
 }
 /* /our representatives */
 
+.about-and-services-container {
+    overflow: hidden;
+}
+
 /* about us */
 .about-us {
     overflow: hidden;
+    float: left;
     width: 50%;
     margin-top: 15px;
+    color: #727272;
 }
 .about-us-text {
     font-size: 14px;
     line-height: 22px;
-    color: #727272;
 }
 .button-read-more {
     float: right;
@@ -273,3 +276,27 @@ position: absolute;
     color: #d9d9d9;
 }
 /* /about us*/
+
+/* services we offer */
+.services-we-offer {
+    float: right;
+    color: #727272;
+    width: 50%;
+    margin-top: 15px;
+}
+.services-list {
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: none;
+}
+.services-item {
+
+}
+.services-item-link {
+    color: #555555;
+    cursor: pointer;
+}
+.services-item-link:hover {
+    color: #f0801c;
+}
+/* /services we offer */
