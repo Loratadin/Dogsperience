@@ -310,12 +310,17 @@ position: absolute;
 /* footer */
 .footer {
     background-image: url('./images/footer.jpg');
-
-}
-.footer1 {
-    width: 25%;
     color: white;
     padding: 25px 20px 35px 20px;
+    overflow: hidden;
+}
+.footer-separator {
+    opacity: 0.2;
+}
+.footer1 {
+    float: left;
+    width: 25%;
+    padding-right: 30px;
 }
 .footer1-content {
     font-size: 14px;
@@ -323,5 +328,14 @@ position: absolute;
 }
 .footer1-content {
     margin-top: 24px;
+}
+.footer2 {
+    float: right;
+    width: 25%;
+}
+.footer2-content {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 22px;
 }
 /* /footer */
