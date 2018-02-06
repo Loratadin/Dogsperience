@@ -319,23 +319,24 @@ position: absolute;
 }
 .footer1 {
     float: left;
+    display: inline-block;
     width: 25%;
     padding-right: 30px;
 }
 .footer1-content {
     font-size: 14px;
     line-height: 22px;
-}
-.footer1-content {
     margin-top: 24px;
 }
 .footer2 {
-    float: right;
+    float: left;
+    display: inline-block;
     width: 25%;
 }
 .footer2-content {
     list-style-type: none;
     font-size: 14px;
     line-height: 22px;
+    margin-top: 24px;
 }
 /* /footer */
