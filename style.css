@@ -249,13 +249,14 @@ position: absolute;
 
 .about-and-services-container {
     overflow: hidden;
+    margin-bottom: 60px;
 }
 
 /* about us */
 .about-us {
     overflow: hidden;
     float: left;
-    width: 50%;
+    width: 47%;
     margin-top: 15px;
     color: #727272;
 }
@@ -298,9 +299,29 @@ position: absolute;
 }
 .services-item-link:hover {
     color: #f0801c;
+    
 }
 .services-arrow {
     height: 16px;
     margin-bottom: -3px;
 }
 /* /services we offer */
+
+/* footer */
+.footer {
+    background-image: url('./images/footer.jpg');
+
+}
+.footer1 {
+    width: 25%;
+    color: white;
+    padding: 25px 20px 35px 20px;
+}
+.footer1-content {
+    font-size: 14px;
+    line-height: 22px;
+}
+.footer1-content {
+    margin-top: 24px;
+}
+/* /footer */
