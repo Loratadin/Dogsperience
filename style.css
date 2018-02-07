@@ -350,5 +350,20 @@ position: absolute;
     line-height: 22px;
     margin-top: 24px;
 }
-
+.footer4 {
+    float: right;
+    display: inline-block;
+    width: 25%;
+}
+.h2-footer {
+    padding-left: 20px;
+    font-size: 18px;
+}
+.footer4-content {
+    margin-top: 24px;
+}
+.footer-pic {
+    border: 2px solid white;
+    margin: auto auto 20px 20px;
+}
 /* /footer */
