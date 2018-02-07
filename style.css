@@ -339,4 +339,15 @@ position: absolute;
     line-height: 22px;
     margin-top: 24px;
 }
+.footer3 {
+    float: left;
+    display: inline-block;
+    width: 25%;
+}
+.footer3-content {
+    list-style-type: none;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 24px;
+}
 /* /footer */
