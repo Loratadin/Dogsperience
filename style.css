@@ -308,6 +308,11 @@ position: absolute;
 /* /services we offer */
 
 /* footer */
+.footer-top {
+    height: 12px;
+    width: auto;
+    background-color: #3f3f39;
+}
 .footer {
     background-image: url('./images/footer.jpg');
     color: white;
@@ -365,5 +370,10 @@ position: absolute;
 .footer-pic {
     border: 2px solid white;
     margin: auto auto 20px 20px;
+}
+.footer-bottom {
+    height: 40px;
+    width: auto;
+    background-color: #3f3f39;
 }
 /* /footer */
