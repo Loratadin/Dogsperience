@@ -375,9 +375,11 @@ position: absolute;
     height: 40px;
     width: auto;
     background-color: #3f3f39;
+    overflow: hidden;
 }
 .copyright {
     overflow: hidden;
+    float: left;
     font-size: 13px;
     color: white;
     padding-top: 9px;
@@ -398,4 +400,20 @@ position: absolute;
     float: left;
     padding-top: 5px;
 }
+.footer-navigation {
+    float: right; 
+    overflow: hidden;
+    list-style-type: none;
+    padding-top: 14px;
+}
+.footer-nav-item {
+    display: block;
+    float: left;
+    color: white;
+    font-size: 13px;
+    padding-right: 25px;
+    cursor: pointer;
+}
+
+
 /* /footer */
