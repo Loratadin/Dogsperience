@@ -376,4 +376,26 @@ position: absolute;
     width: auto;
     background-color: #3f3f39;
 }
+.copyright {
+    overflow: hidden;
+    font-size: 13px;
+    color: white;
+    padding-top: 9px;
+    margin-left: 20px;
+}
+.copyright-word {
+    display: inline-block;
+    float: left;
+    padding-top: 5px;
+}
+.copyright-image {
+    display: inline-block;
+    float: left;
+    margin: auto 6px;
+}
+.copyright-description {
+    display: inline-block;
+    float: left;
+    padding-top: 5px;
+}
 /* /footer */
