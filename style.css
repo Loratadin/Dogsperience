@@ -1,4 +1,4 @@
-@import url('https://typekit.com/fonts/myriad-pro');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i');
 
 /*Common Styles*/
 
@@ -15,7 +15,7 @@
     background-image: url("./images/BG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: myriad-pro;
+    font-family: 'PT Sans', sans-serif;
 }
 .wrapper {
     max-width: 960px;
@@ -117,6 +117,12 @@ position: relative;
     right: 0;
     transform: rotate(180deg);
 }
+.prev-img {
+    display: block;
+}
+.next-img {
+    display: block;
+}
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
@@ -201,18 +207,30 @@ position: absolute;
     margin-top: 14px;
 }
 .project-img {
+    position: relative;
     display: inline-block;
     filter: grayscale(100%);
     padding: 5px;
     border: 1px solid #d9d9d9;
     margin-right: 5px;
 }
+.project-img:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url('./images/magnifier.png') no-repeat top center;
+    width: 56px;
+    height: 56px;
+    transform: translate3d(-50%, -50%, 0);
+    transition: .5s;
+    opacity: 0;
+}
+.project-img:hover:after {
+    opacity: 1;
+}
 .project-img:hover {
     filter: none;
-    background-image: url('./images/magnifier.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
 }
 /* /recent projects */
 
