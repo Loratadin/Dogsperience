@@ -9,7 +9,7 @@
 .mySlides {display: none}
 .mySlides.img {vertical-align: middle;}
 .body {
-    background-image: url("./images/BG.jpg");
+    background-image: url("../images/BG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'PT Sans', sans-serif;
@@ -181,31 +181,36 @@ position: absolute;
 .rec-proj-pics {
     margin-top: 14px;
 }
-.project-img {
+.project-frame {
     position: relative;
     display: inline-block;
     filter: grayscale(100%);
+    width: 25%;
     padding: 5px;
     border: 1px solid #d9d9d9;
-    margin-right: 5px;
+    cursor: pointer;
 }
-.project-img:after {
+.project-frame:after {
     content: "";
     position: absolute;
     left: 50%;
     top: 50%;
-    background: url('./images/magnifier.png') no-repeat top center;
+    background: url('../images/magnifier.png') no-repeat top center;
     width: 56px;
     height: 56px;
     transform: translate3d(-50%, -50%, 0);
     transition: .5s;
     opacity: 0;
 }
-.project-img:hover:after {
+.project-frame:hover:after {
     opacity: 1;
 }
-.project-img:hover {
+.project-frame:hover {
     filter: none;
+}
+.project-photo {
+    width: 210px;
+    height: 160px;
 }
 /* /recent projects */
 /* our representatives */
@@ -298,7 +303,7 @@ position: absolute;
     background-color: #3f3f39;
 }
 .footer {
-    background-image: url('./images/footer.jpg');
+    background-image: url('../images/footer.jpg');
     color: white;
     padding: 25px 20px 35px 20px;
     overflow: hidden;
