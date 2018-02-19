@@ -125,16 +125,31 @@
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    position: relative;
+    color: #555555;
+    font-size: 14px;
+    padding: 8px 10px;
     text-decoration: none;
     display: block;
 }
-
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 27px;
+    width: 109px;
+    height: 1px;
+    color: #555555;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+.last-dropdown-content {
+    left: -20px;
 }
 /* /dropdown */
 /* /logo and nav menu */
