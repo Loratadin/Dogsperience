@@ -239,6 +239,10 @@ position: absolute;
     color: #555555;
 }
 /* /call to action */
+.slide {
+    margin-top: 22px;
+    
+}
 /* recent projects */
 .grid-container {
     overflow: hidden;
