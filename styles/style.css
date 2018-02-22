@@ -175,10 +175,7 @@ position: relative;
     right: 0;
     transform: rotate(180deg);
 }
-.prev-img {
-    display: block;
-}
-.next-img {
+.prev-img, .next-img {
     display: block;
 }
 /* On hover, add black background color with a little bit see-through */
