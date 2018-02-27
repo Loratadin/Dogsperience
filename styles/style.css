@@ -98,6 +98,9 @@
 .nav-menu-item:last-child {
     padding: 14px 0 0 0;
 }
+.nav-menu-item:hover {
+    color: #f0801c;
+}
 .active-page {
     position: relative;
     color: #b35f14;
