@@ -406,6 +406,7 @@ position: absolute;
     font-size: 14px;
     line-height: 22px;
     margin-top: 24px;
+    cursor: pointer;
 }
 .h2-footer {
     padding-left: 20px;
@@ -456,6 +457,10 @@ position: absolute;
     color: white;
     font-size: 13px;
     padding-right: 25px;
+    cursor: pointer;
+}
+.orange-link {
+    color: #f0801c;
     cursor: pointer;
 }
 /* /footer */
