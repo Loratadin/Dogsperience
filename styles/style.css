@@ -227,45 +227,6 @@ position: absolute;
     color: #555555;
 }
 /* /call to action */
-/* my own slider */
-#my-slider, .wrap, .slide-content {
-    overflow-x: hidden;
-    width: 100%;
-    height: 100vh;
-}
-.wrap-my-slider {
-    position: relative;
-    margin-top: 22px;
-}
-.my-slide {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.slide1 {background-image: url('../images/slider1.jpg')}
-.slide2 {background-image: url('../images/slider2.jpg')}
-.slide3 {background-image: url('../images/slider3.jpg')}
-.my-text {
-    position: absolute;
-  color: white;
-  padding: 15px 25px;
-  margin: auto auto -1px 71px;
-  bottom: 45px;
-  text-align: left;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.01));
-  opacity: 40;
-  width: 570px;
-  line-height: 27px;
-}
-.my-h2 {
-    font-size: 18px;
-}
-.my-text-paragraph {
-    font-size: 14px;
-}
-/* /my own slider */
-
 /* recent projects */
 .grid-container {
     overflow: hidden;
