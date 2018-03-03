@@ -1,3 +1,4 @@
+<!-- TODO: rename Index.html to index.html -->
 <!DOCTYPE html>
 <html>
 
@@ -6,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <link rel="icon" href="./images/logo.png">
     <meta charset="UTF-8">
+    <!-- TODO: what is name: "viewport" ? should be name="viewport instead of colon"-->
     <meta name: "viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Website about dogs">
     <meta name="keywords" content="HTML,CSS">
@@ -14,7 +16,36 @@
 
 <body class="body">
     <div class="wrapper">
+
+        <!-- 
+            TODO: For the site header there is a special tag in HTML5 called header. 
+            You should be using it instead of div.
+            https://www.w3schools.com/tags/tag_header.asp
+        -->
         <div class="header-transparent">
+            <!-- TODO: 
+                If you do have repetitive items belonging to the same group one after another
+                like list of social icons, images in a row it's
+                better to create unordered list. 
+                You solution isn't wrong,
+                but it's more of a convention to have the same items in a list.
+                instead of 
+                <div class="social">
+                    ...
+                    <img class="image-social" src="./images/social-face.png">
+                    <img class="image-social" src="./images/social-yout.png">
+                    <img class="image-social" src="./images/social-linke.png">
+                    ...
+                </div>
+                You need to create something like
+                <ul class="social-list">
+                    ...
+                    <li class="social-item">
+                        <img class="social-image" src="./images/social-face.png">
+                    </li>
+                    ...
+                </ul>
+            -->
             <div class="social">
                 <img class="image-social" src="./images/social-face.png">
                 <img class="image-social" src="./images/social-twit.png">
@@ -24,6 +55,10 @@
                 <img class="image-social" src="./images/social-linke.png">
                 <img class="image-social" src="./images/social-google.png">
             </div>
+            <!-- TODO: For any type of contact information HTML5 tag "address" 
+                should be used instead of div
+                http://html5doctor.com/the-address-element/
+             -->
             <div class="phone">
                 <img class="phone-image" src="./images/phone.png">
                 <div class="phone-text">+1 (800) 994 3344</div>
@@ -33,17 +68,29 @@
             <div class="header-white">
                 <div class="logo-box">
                     <div class="logo">
-                        <span class="orange">DOGS</span>PERIENCE</div>
+                        <!-- 
+                            TODO: All text should be transformed to uppercase via css
+                            you should not have uppercase text inside html tag
+                                <span class="orange">DOGS</span>
+                                should be 
+                                <span class="orange">dogs</span>
+                                css class should have "text-transform: uppercase"
+                          -->
+                        <span class="orange">DOGS</span>PERIENCE <!-- TODO: text should be wrapped in the tag --></div>
+                        <!-- TODO: uppercase via css -->
                     <div class="logo-description">ACTIVITY AND NUTRITION</div>
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-menu-item">
+                        <!-- TODO: fix formatting here -->
                         <div class="active-page">HOME
                         </div>
                     </li>
                     <li class="nav-menu-item">
-                        <div class="dropdown">PAGES
+                        <div class="dropdown">PAGES <!-- TODO: text should be wrapped in the tag -->
                             <div class="dropdown-content">
+                                <!-- TODO: similar elements via ul>li -->
+                                <!-- TODO: uppercase via css -->
                                 <a href="#">NUTRITION</a>
                                 <a href="#">ACTIVITIES</a>
                                 <a href="#">GALLERY</a>
@@ -56,8 +103,9 @@
                     <li class="nav-menu-item">PORTFOLIO</li>
                     <li class="nav-menu-item">BLOG</li>
                     <li class="nav-menu-item">
-                        <div class="dropdown">CONTACT
+                        <div class="dropdown">CONTACT <!-- TODO: text should be wrapped in the tag -->
                             <div class="dropdown-content">
+                                <!-- TODO: similar elements via ul>li -->
                                 <a href="#">HEADQUATER</a>
                                 <a href="#">LOCAL DISTRIBUTORS</a>
                             </div>
@@ -68,14 +116,25 @@
             <!--slider-->
             <div class="slideshow-container">
                 <div class="mySlides fade">
+                    <!-- 
+                        TODO: As a suggestion -  can we rename this class in a more meaningful way? 
+                        for example: slider-navigation-list and slider-navigation-item
+                    -->
                     <ul class="dot-list">
                         <li class="dot" onclick="currentSlide(1)"></li>
                         <li class="dot" onclick="currentSlide(2)"></li>
                         <li class="dot" onclick="currentSlide(3)"></li>
                     </ul>
                     <img src="./images/slider1.jpg" style="width:100%">
+                    <!-- 
+                        TODO: As a suggestion more meaningful class name. Which text?
+                        I should be able to understand what it class does without looking
+                        at the website.
+                    -->
                     <div class="text">
+                        <!-- TODO: meaningful class name, not just h2-->
                         <div class="h2">INSERT YOUR HEADLINE HERE</div>
+                        <!-- TODO: meaningful class name, not just text-paragraph-->
                         <div class="text-paragraph">Maecenas eu dolor eget erat hendrerit eleifend. Morbi vel feugiat nunc. Integer non sagittis mi.
                             Aliquam eget orci cursus neque faucibus iaculis nec nec arcu. Fusce finibus ante sit amet.</div>
                     </div>
@@ -120,6 +179,7 @@
             <div class="recent-projects">
                 <div class="h2">RECENT PROJECTS</div>
                 <div class="rec-proj-pics">
+                    <!-- TODO: unordered list here -->
                     <div class="grid-container">
                         <div class="grid-column">
                             <a class="project-frame">
@@ -152,11 +212,15 @@
                 <div class="representative">
                     <img class="repres-img" src="./images/representative1.jpg">
                     <div class="repres-name">
+                        <!-- TODO: there shoulnd't be any <i> tags, bad practice 
+                        https://stackoverflow.com/questions/11135261/should-i-use-i-tag-for-icons-instead-of-span?answertab=active#tab-top    
+                        -->
                         <i>Miriam Broock, Chicago</i>
                     </div>
                     <div class="repres-bio">Vivamus est nisi, condimentum vitae aliquam at, finibus vel ligula. Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit. Suspendisse et venenatis odio. Vestibulum nunc augue, viverra ut auctor non, tincidunt
                         quis erat. Nunc commodo arcu non finibus pharetra. Proin sollicitudin.
+                        <!-- TODO: meaningful class -->
                         <a class="repres-more">
                             <span class="orange">Read more.</span>
                         </a>
@@ -165,6 +229,7 @@
                 <div class="representative">
                     <img class="repres-img" src="./images/representative2.jpg">
                     <div class="repres-name">
+                        <!-- TODO: replace <i> -->
                         <i>Robert Cheerfuler, New York</i>
                     </div>
                     <div class="repres-bio">Curabitur eu convallis mauris. Quisque venenatis sagittis sapien, eu pulvinar leo rhoncus vel. Sed pharetra
@@ -177,11 +242,13 @@
                 <div class="representative">
                     <img class="repres-img" src="./images/representative3.jpg">
                     <div class="repres-name">
+                        <!-- TODO: replace <i> -->
                         <i>Vanessa Zeenda, Dallas</i>
                     </div>
                     <div class="repres-bio">Fusce pharetra justo scelerisque nisl pretium condimentum. Fusce commodo augue nec vulputate ultrices.
                         In volutpat enim ac urna maximus, a vulputate dolor rhoncus. Nulla facilisi. Proin tempus magna et
                         libero euismod.
+                        <!-- TODO: meaningful class -->
                         <a class="repres-more">
                             <span class="orange">Read more.</span>
                         </a>
@@ -204,6 +271,7 @@
                 </div>
                 <div class="services-we-offer">
                     <div class="h2">SERVICES WE OFFER</div>
+                    <!-- GOOD: nothing wrong here, just wanted to point that this is a good example of using ul>li for similar items -->
                     <ul class="services-list">
                         <li>
                             <a class="services-item-link">DOG TRAINING ASSISTANCE.</a>
@@ -228,6 +296,23 @@
                 </div>
             </div>
         </div>
+        <!-- TODO: 
+            1. empty html tag ??? 
+            2. There is html5 footer tag - https://www.w3schools.com/tags/tag_footer.asp
+            3. footer should be as one unit, not three separate ones. 
+            bad practice
+            <div class="footer-top">
+            <div class="footer-middle">
+            <div class="footer-bottom">
+                
+            good practice
+            <footer class="footer">
+                <div class="footer-top">
+                <div class="footer-middle">
+                <div class="footer-bottom">
+            </footer>
+        -->
+        <!-- TODO: -->
         <div class="footer-top"></div>
         <div class="footer">
             <div class="footer-grid-container">
