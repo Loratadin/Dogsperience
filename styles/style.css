@@ -56,10 +56,11 @@ header {
     display: inline-block;
     height: 35px;
 }
-.phone-text {
+address {
     float: right;    
     font-size: 18px;
     color: #555555;
+    font-style: normal;
 }
 /* /Header */
 /* logo and nav menu */
