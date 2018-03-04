@@ -15,45 +15,44 @@
 
 <body class="body">
     <div class="wrapper">
-
-        <!-- 
-            TODO: For the site header there is a special tag in HTML5 called header. 
-            You should be using it instead of div.
-            https://www.w3schools.com/tags/tag_header.asp
-        -->
-        <div class="header-transparent">
-            <!-- TODO: 
-                If you do have repetitive items belonging to the same group one after another
-                like list of social icons, images in a row it's
-                better to create unordered list. 
-                You solution isn't wrong,
-                but it's more of a convention to have the same items in a list.
-                instead of 
-                <div class="social">
-                    ...
-                    <img class="image-social" src="./images/social-face.png">
-                    <img class="image-social" src="./images/social-yout.png">
-                    <img class="image-social" src="./images/social-linke.png">
-                    ...
-                </div>
-                You need to create something like
-                <ul class="social-list">
-                    ...
-                    <li class="social-item">
-                        <img class="social-image" src="./images/social-face.png">
-                    </li>
-                    ...
-                </ul>
-            -->
-            <div class="social">
-                <img class="image-social" src="./images/social-face.png">
-                <img class="image-social" src="./images/social-twit.png">
-                <img class="image-social" src="./images/social-insta.png">
-                <img class="image-social" src="./images/social-yelp.png">
-                <img class="image-social" src="./images/social-yout.png">
-                <img class="image-social" src="./images/social-linke.png">
-                <img class="image-social" src="./images/social-google.png">
-            </div>
+        <header>
+            <ul class="social-list">
+                <li class="social-item">
+                    <div class="social-image">
+                        <img src="./images/social-face.png">
+                    </div>
+                </li>
+                <li class="social-item">
+                    <div class="social-image">
+                        <img src="./images/social-twit.png">
+                    </div>
+                </li>
+                <li class="social-item">
+                    <div class="social-image">
+                        <img src="./images/social-insta.png">
+                    </div>
+                </li>
+                <li class="social-item">
+                    <div class="social-image">
+                        <img src="./images/social-yelp.png">
+                    </div>
+                </li>
+                <li class="social-item">
+                    <div class="social-image">
+                        <img src="./images/social-yout.png">
+                    </div>
+                </li>
+                <li class="social-item">
+                    <div class="social-image">
+                        <img src="./images/social-linke.png">
+                    </div>
+                </li>
+                <li class="social-item">
+                    <div class="social-image">
+                        <img src="./images/social-google.png">
+                    </div>
+                </li>
+            </ul>
             <!-- TODO: For any type of contact information HTML5 tag "address" 
                 should be used instead of div
                 http://html5doctor.com/the-address-element/
@@ -62,7 +61,7 @@
                 <img class="phone-image" src="./images/phone.png">
                 <div class="phone-text">+1 (800) 994 3344</div>
             </div>
-        </div>
+        </header>
         <div class="white-background">
             <div class="header-white">
                 <div class="logo-box">
@@ -75,8 +74,10 @@
                                 <span class="orange">dogs</span>
                                 css class should have "text-transform: uppercase"
                           -->
-                        <span class="orange">DOGS</span>PERIENCE <!-- TODO: text should be wrapped in the tag --></div>
-                        <!-- TODO: uppercase via css -->
+                        <span class="orange">DOGS</span>PERIENCE
+                        <!-- TODO: text should be wrapped in the tag -->
+                    </div>
+                    <!-- TODO: uppercase via css -->
                     <div class="logo-description">ACTIVITY AND NUTRITION</div>
                 </div>
                 <ul class="nav-menu">
@@ -86,7 +87,8 @@
                         </div>
                     </li>
                     <li class="nav-menu-item">
-                        <div class="dropdown">PAGES <!-- TODO: text should be wrapped in the tag -->
+                        <div class="dropdown">PAGES
+                            <!-- TODO: text should be wrapped in the tag -->
                             <div class="dropdown-content">
                                 <!-- TODO: similar elements via ul>li -->
                                 <!-- TODO: uppercase via css -->
@@ -102,7 +104,8 @@
                     <li class="nav-menu-item">PORTFOLIO</li>
                     <li class="nav-menu-item">BLOG</li>
                     <li class="nav-menu-item">
-                        <div class="dropdown">CONTACT <!-- TODO: text should be wrapped in the tag -->
+                        <div class="dropdown">CONTACT
+                            <!-- TODO: text should be wrapped in the tag -->
                             <div class="dropdown-content">
                                 <!-- TODO: similar elements via ul>li -->
                                 <a href="#">HEADQUATER</a>

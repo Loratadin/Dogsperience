@@ -26,19 +26,27 @@
 }
 /* /Common Styles*/
 /* Header */
-.header-transparent {
+header {
     overflow: hidden;
     padding: 21px 0;
 }
-.social {
-    float: left;
+.social-list {
+    text-decoration: none;
+    list-style-type: none;
 }
-.image-social {
-    width: 30px;
+.social-item {
+    float: left;
     margin: 0 12px 0 0;
+}
+.social-image {
+    width: 30px;
     opacity: 0.4;
 }
-.image-social:hover {
+.social-image img {
+    width: 100%;
+    height: auto;
+}
+.social-image:hover {
     opacity: 1;
 }
 .phone {
