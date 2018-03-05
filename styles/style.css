@@ -318,12 +318,13 @@ position: relative;
 }
 .repres-name {
     font-size: 14px;
+    font-style: italic;
 }
 .repres-bio {
     font-size: 12px;
     line-height: 20px;
 }
-.repres-more {
+.repres-read-more {
     font-size: 12px;
     cursor: pointer;
 }
