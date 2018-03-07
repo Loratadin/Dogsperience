@@ -292,7 +292,7 @@ address {
     list-style: none;
 }
 
-.slider-switcher-item {
+.switchers {
     float: left;
     cursor: pointer;
     height: 17px;
@@ -303,7 +303,7 @@ address {
 }
 
 .active,
-.slider-switcher-item:hover {
+.switchers:hover {
     background-color: #f0801c;
 }
 
