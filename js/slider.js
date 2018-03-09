@@ -19,5 +19,8 @@ function showSlides(n) {
         slides[i].style.display = "none";
     }
     slides[slideIndex - 1].style.display = "block";
+    for (var i = 0; i < switchers.length; i++) {
+        switchers[i].className = switchers[i].className.replace("active", "");
+    };
     switchers[slideIndex - 1].className += "active";
 }
