@@ -1,639 +1,664 @@
-        @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i');
-    /*Common Styles*/
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    .mySlides {
-        display: none
-    }
-    
-    .mySlides.img {
-        vertical-align: middle;
-    }
-    
-    .body {
-        background-image: url("../images/BG.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-family: 'PT Sans', sans-serif;
-    }
-    
-    .wrapper {
-        max-width: 960px;
-        margin: 0 auto;
-    }
-    
-    .white-background {
-        overflow: hidden;
-        background: white;
-        border: 1px #d9d9d9;
-        padding: 0 20px 0 20px;
-    }
-    /* /Common Styles*/
-    /* Header */
-    
-    header {
-        overflow: hidden;
-        padding: 21px 0;
-    }
-    
-    .social-list {
-        text-decoration: none;
-        list-style-type: none;
-    }
-    
-    .social-item {
-        float: left;
-        margin: 0 12px 0 0;
-        cursor: pointer;
-    }
-    
-    .social-image {
-        width: 30px;
-        opacity: 0.4;
-    }
-    
-    .social-image img {
-        width: 100%;
-        height: auto;
-    }
-    
-    .social-image:hover {
-        opacity: 1;
-    }
-    
-    .phone {
-        float: right;
-    }
-    
-    .phone-image {
-        display: inline-block;
-        height: 35px;
-    }
-    
-    address {
-        float: right;
-        font-size: 18px;
-        color: #555555;
-        font-style: normal;
-    }
-    /* /Header */
-    /* logo and nav menu */
-    
-    .header-white {
-        padding: 36px 0 23px 0;
-        border-bottom: 1px solid #d9d9d9;
-    }
-    
-    .header-white:before,
-    .header-white:after {
-        content: "";
-        display: table;
-    }
-    
-    .header-white:after {
-        clear: both;
-    }
-    
-    .logo-box {
-        float: left;
-    }
-    
-    .logo {
-        font-size: 30px;
-        color: #555555;
-    }
-    
-    .orange {
-        color: #f0801c;
-    }
-    
-    .uppercase {
-        text-transform: uppercase;
-    }
-    
-    .logo-description {
-        font-size: 11px;
-        color: #d9d9d9;
-    }
-    
-    .nav-menu {
-        position: relative;
-        z-index: 1;
-        float: right;
-        list-style-type: none;
-    }
-    
-    .nav-menu-item {
-        display: block;
-        float: left;
-        color: #555555;
-        font-size: 15px;
-        padding: 14px 30px 0 0;
-        cursor: pointer;
-    }
-    
-    .nav-menu-item:last-child {
-        padding: 14px 0 0 0;
-    }
-    
-    .nav-menu-item:hover {
-        color: #f0801c;
-    }
-    
-    .active-page {
-        position: relative;
-        color: #b35f14;
-    }
-    
-    .active-page:before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 59px;
-        width: 45px;
-        height: 3px;
-        background: #b35f14;
-    }
-    /* dropdown */
-    
-    .dropdown {
-        position: relative;
-    }
-    
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        list-style-type: none;
-        background-color: #ffffff;
-        min-width: 128px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        padding-right: 10px;
-        padding-left: 10px;
-        left: -47px;
-    }
-    
-    .dropdown-content li {
-        position: relative;
-        font-size: 14px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        text-decoration: none;
-        display: block;
-        border-bottom: 1px dotted #555555;
-    }
-    
-    .dropdown-content li a {
-        color: #555555;
-        text-decoration: none;
-    }
-    
-    .dropdown-content li:hover {
-        background-color: #f1f1f1;
-    }
-    
-    .dropdown-content li:last-child {
-        border: none;
-    }
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-    /* /dropdown */
-    /* Hamburger Menu */
-    
-    .hamburger {
-        display: none;
-    }
-    
-    .mobile-menu {
-        display: none;
-    }
-    /* /Hamburger Menu */
-    /* /logo and nav menu */
-    /* Slideshow container */
-    
-    .slideshow-container {
-        position: relative;
-        max-width: 920px;
-        margin: 18px auto;
-    }
-    /* Next & previous buttons */
-    
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        margin: -22px 25px 0 25px;
-        transition: 0.6s ease;
-        border-radius: 8px;
-    }
-    
-    .next {
-        right: 0;
-        transform: rotate(180deg);
-    }
-    
-    .prev-img,
-    .next-img {
-        display: block;
-    }
-    /* On hover, add black background color with a little bit see-through */
-    
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.6);
-    }
-    /* Caption text */
-    
-    .slider-text {
-        position: absolute;
-        color: white;
-        padding: 15px 25px;
-        margin: auto auto -1px 71px;
-        bottom: 45px;
-        text-align: left;
-        background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.01));
-        opacity: 40;
-        width: 570px;
-        line-height: 27px;
-    }
-    
-    .h2 {
-        font-size: 18px;
-    }
-    
-    .slider-text-paragraph {
-        font-size: 14px;
-    }
-    /* slider switcher */
-    
-    .slider-switcher-list {
-        position: absolute;
-        list-style: none;
-    }
-    
-    .switchers {
-        float: left;
-        cursor: pointer;
-        height: 17px;
-        width: 17px;
-        margin: 15px auto auto 15px;
-        border: 1px solid white;
-        transition: background-color 0.6s ease;
-    }
-    
-    .active,
-    .switchers:hover {
-        background-color: #f0801c;
-    }
-    /* Fading animation */
-    
-    .fade {
-        -webkit-animation-name: fade;
-        -webkit-animation-duration: 1.5s;
-        animation-name: fade;
-        animation-duration: 1.5s;
-    }
-    /* call to action */
-    
-    .call-to-action {
-        border: 1px solid #d9d9d9;
-        border-right: none;
-        border-left: none;
-        height: 124px;
-        margin-top: -4px;
-        text-align: center;
-        font-size: 24px;
-        padding-top: 36px;
-        color: #555555;
-    }
-    /* /call to action */
-    /* recent projects */
-    
-    .grid-container {
-        list-style-type: none;
-        overflow: hidden;
-        margin: 0 -10px;
-    }
-    
-    .grid-column {
-        float: left;
-        width: 25%;
-        padding: 10px;
-    }
-    
-    .recent-projects {
-        margin: 20px auto 22px auto;
-        color: #727272;
-    }
-    
-    .rec-proj-pics {
-        margin-top: 14px;
-    }
-    
-    .project-frame {
-        display: block;
-        position: relative;
-        filter: grayscale(100%);
-        padding: 5px;
-        border: 1px solid #d9d9d9;
-        cursor: pointer;
-    }
-    
-    .project-frame:after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        background: url('../images/magnifier.png') no-repeat top center;
-        width: 56px;
-        height: 56px;
-        transform: translate3d(-50%, -50%, 0);
-        transition: .5s;
-        opacity: 0;
-    }
-    
-    .project-frame:hover:after {
-        opacity: 1;
-    }
-    
-    .project-frame:hover {
-        filter: none;
-    }
-    
-    .project-photo {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-    /* /recent projects */
-    /* our representatives */
-    
-    .our-representatives {
-        margin-top: 17px;
-        margin-bottom: 18px;
-        color: #727272;
-    }
-    
-    .representative {
-        overflow: hidden;
-        margin-top: 9px;
-        padding-bottom: 9px;
-        border-bottom: 1px solid #d9d9d9;
-    }
-    
-    .repres-img {
-        float: left;
-        padding: 3px;
-        border: 1px solid #d9d9d9;
-        margin-right: 10px;
-    }
-    
-    .repres-name {
-        font-size: 14px;
-        font-style: italic;
-    }
-    
-    .repres-bio {
-        font-size: 12px;
-        line-height: 20px;
-    }
-    
-    .repres-read-more {
-        font-size: 12px;
-        cursor: pointer;
-    }
-    /* /our representatives */
-    
-    .about-and-services-container {
-        overflow: hidden;
-        margin-bottom: 60px;
-    }
-    /* about us */
-    
-    .about-us {
-        overflow: hidden;
-        float: left;
-        width: 47%;
-        margin-top: 15px;
-        color: #727272;
-    }
-    
-    .about-us-text {
-        font-size: 14px;
-        line-height: 22px;
-    }
-    
-    .button-read-more {
-        float: right;
-        font-size: 16px;
-        color: white;
-        background: #f0801c;
-        padding: 8px 15px;
-        margin-right: 16px;
-        cursor: pointer;
-    }
-    
-    .button-read-more:hover {
-        color: #d9d9d9;
-    }
-    /* /about us*/
-    /* services we offer */
-    
-    .services-we-offer {
-        float: right;
-        color: #727272;
-        width: 50%;
-        margin-top: 15px;
-    }
-    
-    .services-list {
-        font-size: 14px;
-        line-height: 22px;
-        list-style-type: none;
-    }
-    
-    .services-item-link {
-        position: relative;
-        display: inline-block;
-        padding-left: 16px;
-        color: #555555;
-        cursor: pointer;
-    }
-    
-    .services-item-link:before {
-        content: "";
-        position: absolute;
-        left: -1px;
-        top: 2px;
-        background: url('../images/arrow.png');
-        background-size: cover;
-        width: 15px;
-        height: 16px;
-    }
-    
-    .services-item-link:hover {
-        color: #f0801c;
-    }
-    
-    .services-item-link:hover:before {
-        background: url('../images/arrow-orange.png');
-        background-size: cover;
-        width: 15px;
-        height: 16px;
-    }
-    /* /services we offer */
-    /* footer */
-    
-    .footer::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        background: #3f3f39;
-        height: 12px;
-        width: 960px;
-    }
-    
-    .footer-grid-container {
-        overflow: hidden;
-        padding: 23px 10px 2px 10px;
-    }
-    
-    .footer-grid-column {
-        float: left;
-        width: 25%;
-        padding: 10px;
-    }
-    
-    .footer {
-        position: relative;
-        background-image: url('../images/footer.jpg');
-        color: white;
-    }
-    
-    .footer-separator {
-        opacity: 0.2;
-    }
-    
-    .footer-content {
-        list-style-type: none;
-        font-size: 14px;
-        line-height: 22px;
-        margin-top: 24px;
-        cursor: pointer;
-    }
-    
-    .h2-footer {
-        padding-left: 20px;
-        font-size: 18px;
-    }
-    
-    .footer-pic {
-        border: 2px solid white;
-        margin: auto 17px 17px auto;
-    }
-    
-    .footer-last-line {
-        overflow: hidden;
-        background: #3f3f39;
-        height: 50px;
-        width: 960px;
-    }
-    
-    .copyright {
-        overflow: hidden;
-        float: left;
-        font-size: 13px;
-        color: white;
-        padding-top: 9px;
-        margin-left: 20px;
-    }
-    
-    .copyright-word {
-        display: inline-block;
-        float: left;
-        padding-top: 5px;
-    }
-    
-    .copyright-image {
-        display: inline-block;
-        float: left;
-        margin: auto 6px;
-    }
-    
-    .copyright-description {
-        display: inline-block;
-        float: left;
-        padding-top: 5px;
-    }
-    
-    .footer-navigation {
-        float: right;
-        overflow: hidden;
-        list-style-type: none;
-        padding-top: 14px;
-    }
-    
-    .footer-nav-item {
-        display: block;
-        float: left;
-        color: white;
-        font-size: 13px;
-        padding-right: 25px;
-        cursor: pointer;
-    }
-    
-    .orange-link {
-        color: #f0801c;
-        cursor: pointer;
-    }
-    /* /footer */
-    /* Media Queries */
-    
-    @media (max-width: 768px) {
-        nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .nav-menu {
-            display: none;
-        }
-        .hamburger {
-            display: block;
-            cursor: pointer;
-        }
-        .hamburger .line {
-            width: 50px;
-            height: 5px;
-            display: block;
-            background-color: #f0801c;
-            margin: 8px auto;
-            transition: all 0.3s ease-in-out;
-            -moz-animation: all 0.3s ease-in-out;
-            -webkit-transition: all 0.3s ease-in-out;
-            -o-transition: all 0.3s ease-in-out;
-        }
-        .hamburger.is-active .line:nth-child(2) {
-            opacity: 0;
-        }
-        .hamburger.is-active .line:nth-child(1) {
-            transform: translateY(13px) rotate(45deg);
-            -moz-animation: translateY(13px) rotate(45deg);
-            -webkit-transition: translateY(13px) rotate(45deg);
-            -o-transition: translateY(13px) rotate(45deg);
-        }
-        .hamburger.is-active .line:nth-child(3) {
-            transform: translateY(-13px) rotate(-45deg);
-            -moz-animation: translateY(-13px) rotate(-45deg);
-            -webkit-transition: translateY(-13px) rotate(-45deg);
-            -o-transition: translateY(-13px) rotate(-45deg);
-        }
-        /* /Media Queries */
+                                                    @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i');
+                                                /*Common Styles*/
+                                                
+                                                * {
+                                                    margin: 0;
+                                                    padding: 0;
+                                                    box-sizing: border-box;
+                                                }
+                                                
+                                                .mySlides {
+                                                    display: none
+                                                }
+                                                
+                                                .mySlides.img {
+                                                    vertical-align: middle;
+                                                }
+                                                
+                                                .body {
+                                                    background-image: url("../images/BG.jpg");
+                                                    background-repeat: no-repeat;
+                                                    background-size: cover;
+                                                    font-family: 'PT Sans', sans-serif;
+                                                }
+                                                
+                                                .wrapper {
+                                                    max-width: 960px;
+                                                    margin: 0 auto;
+                                                }
+                                                
+                                                .white-background {
+                                                    overflow: hidden;
+                                                    background: white;
+                                                    border: 1px #d9d9d9;
+                                                    padding: 0 20px 0 20px;
+                                                }
+                                                /* /Common Styles*/
+                                                /* Header */
+                                                
+                                                header {
+                                                    overflow: hidden;
+                                                    padding: 21px 0;
+                                                }
+                                                
+                                                .social-list {
+                                                    text-decoration: none;
+                                                    list-style-type: none;
+                                                }
+                                                
+                                                .social-item {
+                                                    float: left;
+                                                    margin: 0 12px 0 0;
+                                                    cursor: pointer;
+                                                }
+                                                
+                                                .social-image {
+                                                    width: 30px;
+                                                    opacity: 0.4;
+                                                }
+                                                
+                                                .social-image img {
+                                                    width: 100%;
+                                                    height: auto;
+                                                }
+                                                
+                                                .social-image:hover {
+                                                    opacity: 1;
+                                                }
+                                                
+                                                .phone {
+                                                    float: right;
+                                                }
+                                                
+                                                .phone-image {
+                                                    display: inline-block;
+                                                    height: 35px;
+                                                }
+                                                
+                                                address {
+                                                    float: right;
+                                                    font-size: 18px;
+                                                    color: #555555;
+                                                    font-style: normal;
+                                                }
+                                                /* /Header */
+                                                /* logo and nav menu */
+                                                
+                                                .header-white {
+                                                    padding: 36px 0 23px 0;
+                                                    border-bottom: 1px solid #d9d9d9;
+                                                }
+                                                
+                                                .header-white:before,
+                                                .header-white:after {
+                                                    content: "";
+                                                    display: table;
+                                                }
+                                                
+                                                .header-white:after {
+                                                    clear: both;
+                                                }
+                                                
+                                                .logo-box {
+                                                    float: left;
+                                                }
+                                                
+                                                .logo {
+                                                    font-size: 30px;
+                                                    color: #555555;
+                                                }
+                                                
+                                                .orange {
+                                                    color: #f0801c;
+                                                }
+                                                
+                                                .uppercase {
+                                                    text-transform: uppercase;
+                                                }
+                                                
+                                                .logo-description {
+                                                    font-size: 11px;
+                                                    color: #d9d9d9;
+                                                }
+                                                
+                                                .nav-menu {
+                                                    position: relative;
+                                                    z-index: 1;
+                                                    float: right;
+                                                    list-style-type: none;
+                                                }
+                                                
+                                                .nav-menu-item {
+                                                    display: block;
+                                                    float: left;
+                                                    color: #555555;
+                                                    font-size: 15px;
+                                                    padding: 14px 30px 0 0;
+                                                    cursor: pointer;
+                                                }
+                                                
+                                                .nav-menu-item:last-child {
+                                                    padding: 14px 0 0 0;
+                                                }
+                                                
+                                                .nav-menu-item:hover {
+                                                    color: #f0801c;
+                                                }
+                                                
+                                                .active-page {
+                                                    position: relative;
+                                                    color: #b35f14;
+                                                }
+                                                
+                                                .active-page:before {
+                                                    content: "";
+                                                    position: absolute;
+                                                    left: 0;
+                                                    top: 59px;
+                                                    width: 45px;
+                                                    height: 3px;
+                                                    background: #b35f14;
+                                                }
+                                                /* dropdown */
+                                                
+                                                .dropdown {
+                                                    position: relative;
+                                                }
+                                                
+                                                .dropdown-content {
+                                                    display: none;
+                                                    position: absolute;
+                                                    list-style-type: none;
+                                                    background-color: #ffffff;
+                                                    min-width: 128px;
+                                                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                                                    padding-right: 10px;
+                                                    padding-left: 10px;
+                                                    left: -47px;
+                                                }
+                                                
+                                                .dropdown-content li {
+                                                    position: relative;
+                                                    font-size: 14px;
+                                                    padding-top: 8px;
+                                                    padding-bottom: 8px;
+                                                    text-decoration: none;
+                                                    display: block;
+                                                    border-bottom: 1px dotted #555555;
+                                                }
+                                                
+                                                .dropdown-content li a {
+                                                    color: #555555;
+                                                    text-decoration: none;
+                                                }
+                                                
+                                                .dropdown-content li:hover {
+                                                    background-color: #f1f1f1;
+                                                }
+                                                
+                                                .dropdown-content li:last-child {
+                                                    border: none;
+                                                }
+                                                
+                                                .dropdown:hover .dropdown-content {
+                                                    display: block;
+                                                }
+                                                /* /dropdown */
+                                                /* Hamburger Menu */
+                                                
+                                                .hamburger {
+                                                    display: none;
+                                                }
+                                                
+                                                .mobile-menu {
+                                                    display: none;
+                                                }
+                                                /* /Hamburger Menu */
+                                                /* /logo and nav menu */
+                                                /* Slideshow container */
+                                                
+                                                .slideshow-container {
+                                                    position: relative;
+                                                    max-width: 920px;
+                                                    margin: 18px auto;
+                                                }
+                                                /* Next & previous buttons */
+                                                
+                                                .prev,
+                                                .next {
+                                                    cursor: pointer;
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    margin: -22px 25px 0 25px;
+                                                    transition: 0.6s ease;
+                                                    border-radius: 8px;
+                                                }
+                                                
+                                                .next {
+                                                    right: 0;
+                                                    transform: rotate(180deg);
+                                                }
+                                                
+                                                .prev-img,
+                                                .next-img {
+                                                    display: block;
+                                                }
+                                                /* On hover, add black background color with a little bit see-through */
+                                                
+                                                .prev:hover,
+                                                .next:hover {
+                                                    background-color: rgba(0, 0, 0, 0.6);
+                                                }
+                                                /* Caption text */
+                                                
+                                                .slider-text {
+                                                    position: absolute;
+                                                    color: white;
+                                                    padding: 15px 25px;
+                                                    margin: auto auto -1px 71px;
+                                                    bottom: 45px;
+                                                    text-align: left;
+                                                    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.01));
+                                                    opacity: 40;
+                                                    width: 570px;
+                                                    line-height: 27px;
+                                                }
+                                                
+                                                .h2 {
+                                                    font-size: 18px;
+                                                }
+                                                
+                                                .slider-text-paragraph {
+                                                    font-size: 14px;
+                                                }
+                                                /* slider switcher */
+                                                
+                                                .slider-switcher-list {
+                                                    position: absolute;
+                                                    list-style: none;
+                                                }
+                                                
+                                                .switchers {
+                                                    float: left;
+                                                    cursor: pointer;
+                                                    height: 17px;
+                                                    width: 17px;
+                                                    margin: 15px auto auto 15px;
+                                                    border: 1px solid white;
+                                                    transition: background-color 0.6s ease;
+                                                }
+                                                
+                                                .active,
+                                                .switchers:hover {
+                                                    background-color: #f0801c;
+                                                }
+                                                /* Fading animation */
+                                                
+                                                .fade {
+                                                    -webkit-animation-name: fade;
+                                                    -webkit-animation-duration: 1.5s;
+                                                    animation-name: fade;
+                                                    animation-duration: 1.5s;
+                                                }
+                                                /* call to action */
+                                                
+                                                .call-to-action {
+                                                    border: 1px solid #d9d9d9;
+                                                    border-right: none;
+                                                    border-left: none;
+                                                    height: 124px;
+                                                    margin-top: -4px;
+                                                    text-align: center;
+                                                    font-size: 24px;
+                                                    padding-top: 36px;
+                                                    color: #555555;
+                                                }
+                                                /* /call to action */
+                                                /* recent projects */
+                                                
+                                                .grid-container {
+                                                    list-style-type: none;
+                                                    overflow: hidden;
+                                                    margin: 0 -10px;
+                                                }
+                                                
+                                                .grid-column {
+                                                    float: left;
+                                                    width: 25%;
+                                                    padding: 10px;
+                                                }
+                                                
+                                                .recent-projects {
+                                                    margin: 20px auto 22px auto;
+                                                    color: #727272;
+                                                }
+                                                
+                                                .rec-proj-pics {
+                                                    margin-top: 14px;
+                                                }
+                                                
+                                                .project-frame {
+                                                    display: block;
+                                                    position: relative;
+                                                    filter: grayscale(100%);
+                                                    padding: 5px;
+                                                    border: 1px solid #d9d9d9;
+                                                    cursor: pointer;
+                                                }
+                                                
+                                                .project-frame:after {
+                                                    content: "";
+                                                    position: absolute;
+                                                    left: 50%;
+                                                    top: 50%;
+                                                    background: url('../images/magnifier.png') no-repeat top center;
+                                                    width: 56px;
+                                                    height: 56px;
+                                                    transform: translate3d(-50%, -50%, 0);
+                                                    transition: .5s;
+                                                    opacity: 0;
+                                                }
+                                                
+                                                .project-frame:hover:after {
+                                                    opacity: 1;
+                                                }
+                                                
+                                                .project-frame:hover {
+                                                    filter: none;
+                                                }
+                                                
+                                                .project-photo {
+                                                    display: block;
+                                                    width: 100%;
+                                                    height: auto;
+                                                }
+                                                /* /recent projects */
+                                                /* our representatives */
+                                                
+                                                .our-representatives {
+                                                    margin-top: 17px;
+                                                    margin-bottom: 18px;
+                                                    color: #727272;
+                                                }
+                                                
+                                                .representative {
+                                                    overflow: hidden;
+                                                    margin-top: 9px;
+                                                    padding-bottom: 9px;
+                                                    border-bottom: 1px solid #d9d9d9;
+                                                }
+                                                
+                                                .repres-img {
+                                                    float: left;
+                                                    padding: 3px;
+                                                    border: 1px solid #d9d9d9;
+                                                    margin-right: 10px;
+                                                }
+                                                
+                                                .repres-name {
+                                                    font-size: 14px;
+                                                    font-style: italic;
+                                                }
+                                                
+                                                .repres-bio {
+                                                    font-size: 12px;
+                                                    line-height: 20px;
+                                                }
+                                                
+                                                .repres-read-more {
+                                                    font-size: 12px;
+                                                    cursor: pointer;
+                                                }
+                                                /* /our representatives */
+                                                
+                                                .about-and-services-container {
+                                                    overflow: hidden;
+                                                    margin-bottom: 60px;
+                                                }
+                                                /* about us */
+                                                
+                                                .about-us {
+                                                    overflow: hidden;
+                                                    float: left;
+                                                    width: 47%;
+                                                    margin-top: 15px;
+                                                    color: #727272;
+                                                }
+                                                
+                                                .about-us-text {
+                                                    font-size: 14px;
+                                                    line-height: 22px;
+                                                }
+                                                
+                                                .button-read-more {
+                                                    float: right;
+                                                    font-size: 16px;
+                                                    color: white;
+                                                    background: #f0801c;
+                                                    padding: 8px 15px;
+                                                    margin-right: 16px;
+                                                    cursor: pointer;
+                                                }
+                                                
+                                                .button-read-more:hover {
+                                                    color: #d9d9d9;
+                                                }
+                                                /* /about us*/
+                                                /* services we offer */
+                                                
+                                                .services-we-offer {
+                                                    float: right;
+                                                    color: #727272;
+                                                    width: 50%;
+                                                    margin-top: 15px;
+                                                }
+                                                
+                                                .services-list {
+                                                    font-size: 14px;
+                                                    line-height: 22px;
+                                                    list-style-type: none;
+                                                }
+                                                
+                                                .services-item-link {
+                                                    position: relative;
+                                                    display: inline-block;
+                                                    padding-left: 16px;
+                                                    color: #555555;
+                                                    cursor: pointer;
+                                                }
+                                                
+                                                .services-item-link:before {
+                                                    content: "";
+                                                    position: absolute;
+                                                    left: -1px;
+                                                    top: 2px;
+                                                    background: url('../images/arrow.png');
+                                                    background-size: cover;
+                                                    width: 15px;
+                                                    height: 16px;
+                                                }
+                                                
+                                                .services-item-link:hover {
+                                                    color: #f0801c;
+                                                }
+                                                
+                                                .services-item-link:hover:before {
+                                                    background: url('../images/arrow-orange.png');
+                                                    background-size: cover;
+                                                    width: 15px;
+                                                    height: 16px;
+                                                }
+                                                /* /services we offer */
+                                                /* footer */
+                                                
+                                                .footer::before {
+                                                    content: "";
+                                                    position: absolute;
+                                                    left: 0;
+                                                    top: 0;
+                                                    background: #3f3f39;
+                                                    height: 12px;
+                                                    width: 960px;
+                                                }
+                                                
+                                                .footer-grid-container {
+                                                    overflow: hidden;
+                                                    padding: 23px 10px 2px 10px;
+                                                }
+                                                
+                                                .footer-grid-column {
+                                                    float: left;
+                                                    width: 25%;
+                                                    padding: 10px;
+                                                }
+                                                
+                                                .footer {
+                                                    position: relative;
+                                                    background-image: url('../images/footer.jpg');
+                                                    color: white;
+                                                }
+                                                
+                                                .footer-separator {
+                                                    opacity: 0.2;
+                                                }
+                                                
+                                                .footer-content {
+                                                    list-style-type: none;
+                                                    font-size: 14px;
+                                                    line-height: 22px;
+                                                    margin-top: 24px;
+                                                    cursor: pointer;
+                                                }
+                                                
+                                                .h2-footer {
+                                                    padding-left: 20px;
+                                                    font-size: 18px;
+                                                }
+                                                
+                                                .footer-pic {
+                                                    border: 2px solid white;
+                                                    margin: auto 17px 17px auto;
+                                                }
+                                                
+                                                .footer-last-line {
+                                                    overflow: hidden;
+                                                    background: #3f3f39;
+                                                    height: 50px;
+                                                    width: 960px;
+                                                }
+                                                
+                                                .copyright {
+                                                    overflow: hidden;
+                                                    float: left;
+                                                    font-size: 13px;
+                                                    color: white;
+                                                    padding-top: 9px;
+                                                    margin-left: 20px;
+                                                }
+                                                
+                                                .copyright-word {
+                                                    display: inline-block;
+                                                    float: left;
+                                                    padding-top: 5px;
+                                                }
+                                                
+                                                .copyright-image {
+                                                    display: inline-block;
+                                                    float: left;
+                                                    margin: auto 6px;
+                                                }
+                                                
+                                                .copyright-description {
+                                                    display: inline-block;
+                                                    float: left;
+                                                    padding-top: 5px;
+                                                }
+                                                
+                                                .footer-navigation {
+                                                    float: right;
+                                                    overflow: hidden;
+                                                    list-style-type: none;
+                                                    padding-top: 14px;
+                                                }
+                                                
+                                                .footer-nav-item {
+                                                    display: block;
+                                                    float: left;
+                                                    color: white;
+                                                    font-size: 13px;
+                                                    padding-right: 25px;
+                                                    cursor: pointer;
+                                                }
+                                                
+                                                .orange-link {
+                                                    color: #f0801c;
+                                                    cursor: pointer;
+                                                }
+                                                /* /footer */
+                                                /* Media Queries */
+                                                
+                                                @media (max-width: 768px) {
+                                                    nav {
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: space-between;
+                                                    }
+                                                    .nav-menu {
+                                                        display: none;
+                                                    }
+                                                    .hamburger {
+                                                        display: block;
+                                                        cursor: pointer;
+                                                    }
+                                                    .hamburger .line {
+                                                        width: 50px;
+                                                        height: 5px;
+                                                        display: block;
+                                                        background-color: #f0801c;
+                                                        margin: 8px auto;
+                                                        transition: all 0.3s ease-in-out;
+                                                        -moz-animation: all 0.3s ease-in-out;
+                                                        -webkit-transition: all 0.3s ease-in-out;
+                                                        -o-transition: all 0.3s ease-in-out;
+                                                    }
+                                                    .hamburger.is-active .line:nth-child(2) {
+                                                        opacity: 0;
+                                                    }
+                                                    .hamburger.is-active .line:nth-child(1) {
+                                                        transform: translateY(13px) rotate(45deg);
+                                                        -moz-animation: translateY(13px) rotate(45deg);
+                                                        -webkit-transition: translateY(13px) rotate(45deg);
+                                                        -o-transition: translateY(13px) rotate(45deg);
+                                                    }
+                                                    .hamburger.is-active .line:nth-child(3) {
+                                                        transform: translateY(-13px) rotate(-45deg);
+                                                        -moz-animation: translateY(-13px) rotate(-45deg);
+                                                        -webkit-transition: translateY(-13px) rotate(-45deg);
+                                                        -o-transition: translateY(-13px) rotate(-45deg);
+                                                    }
+                                                    .mobile-menu {
+                                                        background-color: #d9d9d9;
+                                                        padding: 0;
+                                                        margin: 0;
+                                                        text-align: center
+                                                    }
+                                                    .mobile-dropdown-content {
+                                                        display: none;
+                                                    }
+                                                    .mobile-menu li,
+                                                    .mobile-menu ul li a {
+                                                        color: #3f3f39;
+                                                        text-decoration: none;
+                                                        list-style-type: none;
+                                                    }
+                                                    .mobile-menu li {
+                                                        text-transform: uppercase;
+                                                    }
+                                                    .mobile-menu ul li {
+                                                        text-transform: capitalize;
+                                                    }
+                                                    .mobile-menu li:hover {
+                                                        background-color: #d1d1d1;
+                                                        color: white;
+                                                    }
+                                                    /* /Media Queries */
