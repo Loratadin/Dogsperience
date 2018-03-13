@@ -302,7 +302,7 @@ address {
     transition: background-color 0.6s ease;
 }
 
-.switchers:active,
+.active,
 .switchers:hover {
     background-color: #f0801c;
 }
