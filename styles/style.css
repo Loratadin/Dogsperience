@@ -651,8 +651,17 @@ address {
 /* Media Queries */
 
 @media (max-width: 768px) {
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-menu {
+        display: none;
+    }
     .hamburger {
         display: block;
+        cursor: pointer;
     }
     .hamburger .line {
         width: 50px;
