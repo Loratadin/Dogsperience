@@ -54,6 +54,7 @@ header {
 .social-item {
     float: left;
     margin: 0 12px 0 0;
+    cursor: pointer;
 }
 
 .social-image {
@@ -216,6 +217,16 @@ address {
 
 
 /* /dropdown */
+
+
+/* Hamburger Menu */
+
+.hamburger {
+    display: none;
+}
+
+
+/* /Hamburger Menu */
 
 
 /* /logo and nav menu */
@@ -635,3 +646,22 @@ address {
 
 
 /* /footer */
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .hamburger .line {
+        width: 50px;
+        height: 5px;
+        display: block;
+        background-color: #f0801c;
+        margin: 8px auto;
+    }
+}
+
+
+/* /Media Queries */
